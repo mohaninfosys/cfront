@@ -24,7 +24,6 @@ export class SigninAuthService {
   linkedinloginresponse():Observable<any>{
     //this.url =  'http://localhost:5000/auth/linkedin';
     this.url="http://cback.herokuapp.com/auth/linkedin";
-    console.log("**************************");
     return this._http.get(this.url);
   }
 
